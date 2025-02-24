@@ -43,7 +43,7 @@ rf_model = joblib.load('random_forest_model.pkl')
 scaler = joblib.load('scaler.pkl')
 
 # Define the prediction route (POST method)
-@app.route('/predict', methods=['POST'])
+@app.route('/recommendation', methods=['POST'])
 def predict():
     try:
         # Get JSON data from the request
