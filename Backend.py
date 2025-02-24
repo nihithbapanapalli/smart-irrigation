@@ -75,4 +75,4 @@ def predict():
 # Run the Flask server
 if __name__ == '__main__':
     # Start the server only if running as a standalone script (not importing this file elsewhere)
-    app.run(host='0.0.0.0', port=10000, debug=True) 
+    app.run(host='0.0.0.0', port=10001, debug=True) 
