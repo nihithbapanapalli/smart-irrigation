@@ -396,4 +396,4 @@ def calculate_crop_details():
     return jsonify(response_data)
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5003, debug=True)
+    app.run(host='0.0.0.0', port=10002, debug=True)
