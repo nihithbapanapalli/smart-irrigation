@@ -5,6 +5,7 @@ import joblib
 from sklearn.ensemble import RandomForestRegressor
 from flask import Flask, request, jsonify
 from datetime import datetime
+from flask_cors import CORS
 
 # Initialize Flask app
 app = Flask(__name__)
