@@ -8,6 +8,7 @@ from datetime import datetime
 
 # Initialize Flask app
 app = Flask(__name__)
+CORS(app)
 
 # Weather API function to get dynamic weather data
 def get_weather_data():
