@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify
 
 app = Flask(__name__)
+CORS(app)
 
 # Default thresholds in percentage
 thresholds = {"min": 40, "max": 70}
