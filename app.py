@@ -3,6 +3,8 @@ import subprocess
 from flask import Flask, jsonify
 
 app = Flask(__name__)
+CORS(app)
+
 
 
 def run_script(script_name):
