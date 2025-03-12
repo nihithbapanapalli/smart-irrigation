@@ -36,7 +36,8 @@ print("Model and Scaler have been saved!")
 
 # Initialize Flask app
 app = Flask(__name__)
-CORS(app, resources={r"/recommendation": {"origins": "http://localhost:3000"}})  # Enable CORS for all routes
+CORS(app, resources={r"/*": {"origins": "*"}})  # Allow all origins
+  # Enable CORS for all routes
 
 # Load the trained model and scaler for Flask API (reuse saved files)
 rf_model = joblib.load('random_forest_model.pkl')
