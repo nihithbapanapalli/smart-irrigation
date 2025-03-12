@@ -9,7 +9,7 @@ CORS(app)
 
 def run_script(script_name):
     """Function to run a script using subprocess"""
-    subprocess.run(["python3", script_name])
+    subprocess.Popen(["python3", script_name])
 
 # Start all modules as separate threads
 scripts = ["Backend.py", "Rainfall.py", "soil.py", "main.py"]
