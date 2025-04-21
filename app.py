@@ -137,5 +137,5 @@ def set_manual():
         "config": crop_config[crop_num]
     })
 
-if _name_ == '_main_':
+if __name__ == '__main__':
     app.run(host='0.0.0.0',port=10004, debug=True)
