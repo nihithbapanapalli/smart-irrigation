@@ -3,7 +3,7 @@ from datetime import datetime
 from collections import deque
 from flask_cors import CORS  # Import CORS
 
-app = Flask(_name_)
+app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 app.config['JSON_SORT_KEYS'] = False
 
